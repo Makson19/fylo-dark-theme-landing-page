@@ -1,0 +1,531 @@
+.main {
+    .hero {
+        height: 24.3rem;
+        overflow-y: visible;
+        background: hsl(217, 27%, 15%) url("../../images/bg-curvy-mobile.svg") no-repeat bottom;
+        background-size: 100%;
+        
+        .container {
+            padding: 1rem 2.5rem;
+
+            .hero-image {
+                width: 100%;
+                max-width: 430px;
+                margin: 0 auto;
+                overflow: hidden;
+    
+                img {
+                    width: 100%;
+                }
+            }
+
+            .hero-text {
+                margin: 2rem auto 0;
+                text-align: center;
+
+                h1 {
+                    font: 700 1.7rem $font-primary;
+                    color: $white;
+                    line-height: 1.5;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    font: 400 1rem $font-secondary;
+                    padding: 0 0.5rem;
+                    max-width: 39rem;
+                    margin: 0 auto;
+                    line-height: 1.5;
+                }
+
+                .btn-get-started {
+                    background: linear-gradient(150deg, $cyan 0%, $blue 100%);
+                    font: 700 1rem $font-secondary;
+                    color: $white;
+                    padding: 0.875rem 5rem;
+                    border-radius: 1.45rem;
+                    display: inline-block;
+                    overflow: hidden;
+                    margin: 2rem 0;
+                    transition: transform 0.3s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.05);
+                        background: linear-gradient(150deg, #a3eee8, 40%, #85c5e0);
+                    }
+                }
+            }
+        }
+    }
+
+
+    .features {
+        padding: 23.5rem 2rem 1.5rem;
+
+        .container {
+            .features-list {
+                display: grid;
+                grid-template-rows: repeat(4, 1fr);
+                grid-template-columns: minmax(auto, 27.36rem);
+                grid-template-areas: "a" "b" "c" "d";
+                row-gap: 6rem;
+                justify-content: center;
+                text-align: center;
+
+                .features-item {
+                    .icon {
+                        height: 4.5rem;
+                        margin-bottom: 2rem;
+
+                        img {
+                            height: 100%;
+                        }
+                    }
+
+                    h2 {
+                        font: 700 1.3rem $font-primary;
+                        color: $white;
+                        margin-bottom: 1rem;
+                    }
+
+                    p {
+                        font: 400 1rem $font-secondary;
+                    }
+                }
+
+                .features-item:nth-child(1) {
+                    grid-area: a;
+                }
+
+                .features-item:nth-child(2) {
+                    grid-area: b;
+                }
+
+                .features-item:nth-child(3) {
+                    grid-area: c;
+                }
+
+                .features-item:nth-child(4) {
+                    grid-area: d;
+                }
+            }
+        }
+    }
+
+
+    .productive {
+        .container {
+            padding: 10rem 2rem 10rem;
+            
+            .productive-image {
+                width: 100%;
+                max-width: 430px;
+                padding: 0 1rem;
+                margin: 0 auto;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .productive-text {
+                margin: 0 auto;
+                max-width: 34.43rem;
+
+                h2 {
+                    font: 700 1.3rem $font-primary; 
+                    color: $white;
+                    margin-top: 3rem; 
+                    margin-bottom: 1.5rem;
+                }
+
+                p {
+                    font: 400 1rem $font-secondary;
+                    margin: 1rem 0;
+                }
+
+                a {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0.4rem;
+                    font: 400 1rem $font-secondary;
+                    color: $cyan;
+                    border-bottom: 2px solid $cyan;
+                    padding-bottom: 0.4rem;
+                    transition: color 0.3s ease-in-out;
+
+                    &:hover {
+                        color: $white;
+                        border-bottom-color: $white;
+
+                        svg {
+                            color: $white;
+                        }
+                    }
+
+                    svg {
+                        color: $cyan;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .testmonials {
+        position: relative;
+
+        .quote {
+            width: 2rem;
+            // height: 23px;
+            position: relative;
+            bottom: -0.1rem;
+            left: 2.8rem;
+            z-index: -1;
+
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .container {
+            position: relative;
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: minmax(auto, 23.8rem);
+            grid-template-areas: "a" "b" "c";
+            row-gap: 2rem;
+            justify-content: center;
+            padding: 1.5rem;
+            background: url("../../images/bg-quotes.png") no-repeat 30px 6px;
+            background-size: 21px;
+            max-width: 375px;
+
+            .testmonial-card {
+                background-color: $dark-blue-testmonials;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                padding: 2rem 1.5rem;
+                border-radius: 0.6rem;
+
+                .testmonial {
+                    font: 400 0.9rem $font-secondary;
+                    line-height: 1.7;
+                }
+
+                .testmonial-person {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.7rem;
+
+                    .profile {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        border-radius: 50%;
+
+                    }
+
+                    .testmonial-figcaption {
+                        h3 {
+                            font: 700 0.875rem $font-primary;
+                            color: $white;
+                            letter-spacing: 1.2px;
+                            margin-bottom: 0.3rem;
+                        }
+
+                        h4 {
+                            font: 400 0.8rem $font-primary;
+                        }
+                    }
+                }
+            }
+
+            .testmonial-card .card1 {
+                grid-area: a;
+            }
+
+            .testmonial-card .card2 {
+                grid-area: b;
+            }
+
+            .testmonial-card .card3 {
+                grid-area: c;
+            }
+        }
+    }
+
+
+    .form {
+        .container {
+            text-align: center;
+            padding: 0 1.5rem;
+
+            .card {
+                margin: 0 auto;
+                padding: 2.5rem 2rem;
+                background-color: $dark-blue;
+                border-radius: 0.8rem;
+                max-height: 23.8rem;
+                max-width: 52.86rem;
+                box-shadow: 0.625rem 0.625rem 1.25rem rgba(0, 0, 0, 0.4);
+                position: relative;
+                top: 12rem;
+
+                .form-title {
+                    font: 700 1.3rem $font-primary;
+                    color: $white;
+                    margin-bottom: 1.5rem;
+                }
+    
+                .form-text {
+                    font: 400 1rem $font-secondary;
+                    margin-bottom: 2rem;
+                }
+                
+                .form-container {
+                    .wrap {
+                        display: flex;
+                        flex-direction: column;
+
+                        .wrap-input {
+                            display: flex;
+                            flex-direction: column;
+                            margin-bottom: 0.4rem;
+
+                            .input-email {
+                                height: 45px;
+                                width: 100%;
+                                border: none;
+                                outline: none;
+                                border-radius: 1.43rem;
+                                padding: 0 1.2rem;
+                                font: 400 0.8rem $font-secondary;
+                                margin-bottom: 0.4rem;
+                            }
+    
+                            .error {
+                                text-align: left;
+                                padding-left: 1.5rem;
+                                margin: 0.1rem 0;
+                                color: $light-red;
+                                font: 400 0.7rem $font-secondary;
+                                letter-spacing: 1px;
+                                visibility: hidden;
+                            }
+                        }
+
+                        .btn {
+                            height: 45px;
+                            width: 100%;
+                            background: linear-gradient(150deg, $cyan 0%, $blue 100%);
+                            border: none;
+                            border-radius: 20px;
+                            font: 700 1rem $font-primary;
+                            color: $white;
+                            transition: transform 0.3s ease-in-out;
+
+                            &:hover {
+                                transform: scale(1.05);
+                                background: linear-gradient(150deg, #a3eee8, 40%, #85c5e0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// min-width: 650px
+@media (min-width: 40.625rem) {
+    .main {
+        .hero > .container {
+            .hero-text {
+                max-width: 41.43rem;
+
+                h1 {
+                    font-size: 2.2rem;
+                }
+
+                p {
+                    font-size: 1.25rem;
+                    padding: 0;
+                }
+            }
+        }
+
+        .productive > .container {
+            .productive-text {
+                h2 {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        .form > .container {
+            .card {
+                top: 9rem;
+                
+                .form-container > .wrap {
+                    flex-direction: row;
+                    gap: 1.5rem;
+                    
+                    .wrap-input {
+                        flex: 1.3
+                    }
+    
+                    .btn {
+                        flex: 0.7;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+// min-width: 800px
+@media (min-width: 50rem) {
+    .main {
+        .hero {
+            height: 71.5rem;
+            background: #1c2431 url("../../images/bg-curvy-desktop.svg") no-repeat bottom;
+            background-size: 100%;
+
+            .container {
+                .hero-image {
+                    // max-width: 41.43rem;
+                    max-width: 44rem;
+                }
+
+                .hero-text {
+                    max-width: 42.43rem;
+
+                    h1 {
+                        font-size: 2.5rem;
+                        margin-bottom: 2rem;
+                    }
+
+                    .btn-get-started {
+                        padding: 1.33rem 7.125rem;
+                        border-radius: 2rem;
+                    }
+                }
+            }
+        }
+
+        
+        .features {
+            padding-top: 0;
+
+            .container {
+                
+                .features-list {
+                    grid-template-rows: repeat(2, 1fr);
+                    grid-template-columns: repeat(2, minmax(auto, 27.36rem));
+                    grid-template-areas: "a b" "c d";
+                    column-gap: 8rem;
+
+                    .features-item {
+                        .icon {
+                            height: 7.143rem;
+                        }
+                    }
+    
+                    .features-item:nth-child(1) {
+                        grid-area: a;
+                        padding: 0 1rem;
+                    }
+    
+                    .features-item:nth-child(2) {
+                        grid-area: b;
+                    }
+    
+                    .features-item:nth-child(3) {
+                        grid-area: c;
+                    }
+    
+                    .features-item:nth-child(4) {
+                        grid-area: d;
+                        padding: 0 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// min-width: 1024px
+@media (min-width: 64rem) {
+    .main {
+        .productive {
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 4rem;
+
+                .productive-image {
+                    flex: 1;
+                    max-width: 50%;
+                    margin: 0;
+                }
+
+                .productive-text {
+                    flex: 1;
+                    margin: 0;
+    
+                    h2 {
+                        font-size: 2.5rem;
+                        max-width: 28.6rem;
+                    }
+                }
+            }
+        }
+
+
+        .testmonials {
+            .container {
+                max-width: 84.43rem;
+                grid-template-rows: 1fr;
+                grid-template-columns: repeat(3, minmax(auto, 23.8rem));
+                column-gap: 2.5rem;
+                background-size: 55px 45px;
+                background-position: 50px 0;
+                padding: 2.5rem 3.75rem 0 3.75rem;
+
+                .testmonial-card {
+                    .testmonial {
+                        font-size: 1rem;
+                    }
+
+                    .testmonial-person > .testmonial-figcaption {
+                        h3 {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .form > .container > .card {
+            padding: 2.5rem 4rem;
+            max-width: 57rem;
+
+            .form-container > .wrap {
+                .wrap-input{
+                    flex: 1.4;
+                }
+
+                .btn {
+                    flex: 0.6;
+                }
+            }
+        }
+    }
+}
