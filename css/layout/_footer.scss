@@ -61,7 +61,7 @@
             }
 
 
-            .footer-navigation {
+            #footer-navigation {
                 display: flex;
                 flex-direction: column;
                 gap: 2rem;
@@ -139,7 +139,7 @@
             gap: 2.5rem;
         }
 
-        .footer-navigation {
+        #footer-navigation {
             flex-direction: row;
             justify-content: center;
             gap: 5rem;

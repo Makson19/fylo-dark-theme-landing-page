@@ -51,14 +51,14 @@ body {
   height: 100%;
 }
 
-.header .container .navbar .links {
+.header .container #navbar .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 1.2rem;
 }
 
-.header .container .navbar .links .link-item {
+.header .container #navbar .links .link-item {
   cursor: pointer;
   -webkit-transition: -webkit-text-decoration 0.3s linear;
   transition: -webkit-text-decoration 0.3s linear;
@@ -66,18 +66,18 @@ body {
   transition: text-decoration 0.3s linear, -webkit-text-decoration 0.3s linear;
 }
 
-.header .container .navbar .links .link-item a {
+.header .container #navbar .links .link-item a {
   font: 400 1rem "Raleway", sans-serif;
   color: rgba(255, 255, 255, 0.7);
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
-.header .container .navbar .links .link-item a:hover {
+.header .container #navbar .links .link-item a:hover {
   color: white;
 }
 
-.header .container .navbar .links .link-item:hover {
+.header .container #navbar .links .link-item:hover {
   text-decoration: underline;
 }
 
@@ -89,10 +89,10 @@ body {
     width: 12.6rem;
     height: 3.7rem;
   }
-  .header .container .navbar .links {
+  .header .container #navbar .links {
     gap: 4rem;
   }
-  .header .container .navbar .links li > a {
+  .header .container #navbar .links li > a {
     font-size: 1.2rem;
   }
 }
@@ -718,7 +718,7 @@ body {
   color: white;
 }
 
-.footer .container .footer-container .footer-navigation {
+.footer .container .footer-container #footer-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -729,18 +729,18 @@ body {
   gap: 2rem;
 }
 
-.footer .container .footer-container .footer-navigation .nav-info li {
+.footer .container .footer-container #footer-navigation .nav-info li {
   margin-bottom: 0.5rem;
 }
 
-.footer .container .footer-container .footer-navigation .nav-info li a {
+.footer .container .footer-container #footer-navigation .nav-info li a {
   font: 400 1rem "Open Sans", sans-serif;
   color: rgba(255, 255, 255, 0.7);
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
-.footer .container .footer-container .footer-navigation .nav-info li a:hover {
+.footer .container .footer-container #footer-navigation .nav-info li a:hover {
   color: white;
 }
 
@@ -807,7 +807,7 @@ body {
             flex-direction: row;
     gap: 2.5rem;
   }
-  .footer > .container > .footer-container .footer-navigation {
+  .footer > .container > .footer-container #footer-navigation {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
