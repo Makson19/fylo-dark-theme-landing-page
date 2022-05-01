@@ -108,6 +108,10 @@
                         color: $cyan;
                         border-color: $cyan;
                     }
+
+                    .sr-only {
+                        display: none;
+                    }
                 }
             }
         }
